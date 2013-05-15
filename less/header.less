@@ -1,0 +1,29 @@
+header {
+	height:@headerHeight;
+	//background-color: @headerColor;
+	//background-image: url(assets/indyBack.jpg);
+	
+	.rounded(0 0 20px 20px);
+	opacity: 1;
+	
+	h1{
+		position:relative;
+		top:20px;
+		left:30px;
+	}
+}
+
+
+@media only screen and (max-device-width : @smallSmartPhone), 
+only screen and (max-width : @smallSmartPhone){
+	header{
+		height: 100px;
+		background-image: url('http://baconmockup.com/480/100');
+		opacity:1;
+	}
+	h1{
+		text-align:center;
+		color:white;
+		
+	}
+}
